@@ -13,14 +13,16 @@ console.log('Yargs', argv);
 
 if(command === 'add'){
   var note = notes.addNote(argv.title, argv.body);
-  var message = note ? `Note created!\nTitle: ${note.title}\nBody: ${note.body}` : 'Note title already in use.';
+  var message = note ? 'Note created!' : 'Note title already in use.';
   console.log(message);
+  note ? notes.logNote(note) : '';
 }else if(command === 'list'){
   notes.getAll();
 }else if(command === 'read'){
   var note = notes.getNote(argv.title);
-  var message = note ? `Note read!\nTitle: ${note.title}\nBody: ${note.body}` : 'Note not found.';
+  var message = note ? 'Note read!' : 'Note not found.';
   console.log(message);
+  note ? notes.logNote(note) : '';
 }else if(command === 'remove'){
   var noteRemoved = notes.removeNote(argv.title);
   var message = noteRemoved ? 'Note was removed' : 'Note not found';
