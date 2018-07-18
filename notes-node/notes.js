@@ -36,14 +36,16 @@ var getAll = () => {
 };
 
 var getNote = (title) => {
-  console.log('Reading the note', title);
+  var notes = fetchNotes();
+  var filteredNotes = notes.filter((note) => note.title === title);
+  return filteredNotes[0];
 };
 
 var removeNote = (title) => {
     var notes = fetchNotes();
     var filteredNotes = notes.filter((note) => note.title !== title);
     saveNotes(filteredNotes);
-    return  notes.length !== filteredNotes.length; 
+    return  notes.length !== filteredNotes.length;
 };
 
 module.exports = {
