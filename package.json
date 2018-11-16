@@ -1,0 +1,29 @@
+{
+  "name": "nodejstraining",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4",
+    "express-hbs": "^1.0.4",
+    "express-handlebars": "^3.0.0",
+    "lodash": "^4.17.11",
+    "request": "^2.88.0",
+    "yargs": "^12.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RmViana/nodeJsTraining.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RmViana/nodeJsTraining/issues"
+  },
+  "homepage": "https://github.com/RmViana/nodeJsTraining#readme"
+}
