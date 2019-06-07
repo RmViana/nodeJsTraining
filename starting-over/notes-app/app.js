@@ -1,12 +1,10 @@
-const validator = require('validator')
-
+const chalk    = require('chalk')
 const getNotes = require('./notes')
 
 const msg = getNotes()
 
 console.log(msg)
-console.log(validator.isURL("gmail.com"))
-
+console.log(chalk.green.bold.inverse("Success!"))
 
 
 // const fs = require('fs')
