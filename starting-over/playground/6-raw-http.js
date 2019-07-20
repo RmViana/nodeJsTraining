@@ -11,7 +11,6 @@ const request = https.request(url, (response) => {
         const body = JSON.parse(data)
         console.log(body)
     })
-
 })
 
 request.on('error', (error) => {
