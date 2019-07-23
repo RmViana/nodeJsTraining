@@ -61,12 +61,6 @@ app.get('/weather', (req, res) => {
             })
         }
     })
-
-    // res.send({
-    //     forecast : 'It\'s 20 degrees out there.',
-    //     location : 'São Paulo',
-    //     address : req.query.address
-    // })
 })
 
 app.get('/products', (req, res) => {
