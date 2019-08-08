@@ -77,6 +77,7 @@ app.get('/tasks/:id', (req, res) => {
     })
 })
 
+//Start the server on the chosen port
 app.listen(port, () => {
     console.log('Server is up on port ' + port)
 })
