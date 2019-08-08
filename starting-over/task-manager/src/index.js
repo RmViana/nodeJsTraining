@@ -8,6 +8,8 @@ const port    = process.env.PORT || 3000
 
 app.use(express.json())
 
+
+//Create User
 app.post('/users', (req, res) => {
     const user = new User(req.body)
     user.save().then(() => {
@@ -17,6 +19,7 @@ app.post('/users', (req, res) => {
     })
 })
 
+//Read all Users
 app.get('/users', (req, res) => {
     User.find({}).then((users) => {
         res.send(users)
@@ -25,6 +28,8 @@ app.get('/users', (req, res) => {
     })
 })
 
+
+//Read specific User
 app.get('/users/:id', (req, res) => {
     const _id = req.params.id
     User.findById(_id).then((user) => {
@@ -38,6 +43,8 @@ app.get('/users/:id', (req, res) => {
 
 })
 
+
+//Create Task
 app.post('/tasks', (req, res) => {
     const task = new Task(req.body)
     task.save().then(() => {
@@ -47,6 +54,7 @@ app.post('/tasks', (req, res) => {
     })
 })
 
+//Read All Tasks
 app.get('/tasks', (req, res) => {
     Task.find({}).then((tasks) => {
         res.send(tasks)
@@ -55,6 +63,8 @@ app.get('/tasks', (req, res) => {
     })
 })
 
+
+//Read specific Task
 app.get('/tasks/:id', (req, res) => {
     const _id = req.params.id
     Task.findById(_id).then((task) => {
