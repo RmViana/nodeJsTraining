@@ -9,6 +9,7 @@
     "express-handlebars": "^3.0.0",
     "express-hbs": "^1.0.4",
     "hbs": "^4.0.4",
+    "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.11",
     "request": "^2.88.0",
     "yargs": "^12.0.2"
