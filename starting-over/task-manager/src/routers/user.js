@@ -6,6 +6,8 @@ const auth    = require('../middleware/auth')
 const { sendWelcomeEmail, sendCancelationEmail} = require('../emails/account')
 const router  = new express.Router()
 
+
+//Trying to commit from Mac
 router.post('/users', async (req, res) => {
     const user = new User(req.body)
     try{
