@@ -7,7 +7,7 @@ const { sendWelcomeEmail, sendCancelationEmail} = require('../emails/account')
 const router  = new express.Router()
 
 
-//Trying to commit from Mac
+//Trying to commit from Mac Pc
 router.post('/users', async (req, res) => {
     const user = new User(req.body)
     try{
