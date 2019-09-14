@@ -22,6 +22,7 @@ io.on('connection', (socket) => {
     socket.on('increment', () => {
         count++
         // socket.emit('countUpdated', count)
+        //All clients
         io.emit('countUpdated', count)
     })
 })
