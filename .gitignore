@@ -1,3 +1,4 @@
-node_modules/
+*node_modules/*
 starting-over/task-manager/config/
 server.log
+node_modules
